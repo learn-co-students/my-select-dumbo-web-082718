@@ -1,19 +1,34 @@
-
+arr = []
+collection =  [1,2,3,4,5,6]
 def my_select(collection)
-  arr = []
-  
+arr = []
+
   if block_given? 
   i = 0 
 
   while i < collection.length 
-    yield collection[i]
-   
-  arr << collection
-  end 
-   i += 1 
- 
+    yield collection.select[i].even?
+    i += 1 
+  end
+  collection
   else 
 
-  puts "Hey! No block was given!"
+  puts "SELECT! No block was given!"
   end 
-end
+  # arr << collection
+
+# # # call your method here!
+collection.select do |num| puts 
+
+   if num % 2 == 0
+    puts arr << num
+    
+  #   return true 
+  #   else 
+  #   return false
+   
+  end 
+end 
+arr 
+end 
+p my_select(collection)
