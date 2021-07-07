@@ -1,3 +1,5 @@
+require_relative './spec_helper'
+
 describe "my_select" do
   let(:nums) { [1, 2, 3, 4, 5] }
 
